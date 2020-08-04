@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <style>
+        body {
+            background-color: #3b71c4;
+            color: white;
+        }
+    </style>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 mx-auto mt-3" style="background-color: #4A3BC4;">
+                <div class="d-flex flex-column">
+                    <div class="my-4 ">
+                        <h2 class="d-inline">ChatPot</h2>
+                        <button class="btn btn-danger float-right">Leave Room</button>
+                    </div>
+                    <div class="my-4">
+                        <div class="row">
+                            <div class="col-lg-3" style=" background-color:#867CD7;color:white;">
+                                <h4>Room Name: </h4>
+                                <p id="roomName">javascript</p>
+                                <h4>Users</h4>
+                                <p id="room_member">Brad</p>
+                                <p id="user_typing"></p>
+                            </div>
+                            <div class="col-lg-9" style="background-color: #F5F5F5;">
+                                <div class="chat p-1">
+                                    <div class="msg my-3" style="background-color: #E4E6FF; color: black;">
+                                        <p>Username: <span id="username"></span> Time: <span id="time"></span></p>
+                                        <p id="content">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Sapiente, earum.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="my-4 form-submit">
+                        <label class="sr-only" for="msg_text">Enter Message</label>
+                        <div class="input-group mb-2">
+                            <input type="text" class="form-control" id="msg_text" placeholder="Enter Message">
+                            <div class="input-group-prepend">
+                                <button class="btn input-group-text" id="submit-btn">
+                                    send
+                                </button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
