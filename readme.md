@@ -32,7 +32,7 @@ run the program
 npm run start
 ```
 ## Demo
-![til](./image/demon.gif)
+![til](./image/demo.gif)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
