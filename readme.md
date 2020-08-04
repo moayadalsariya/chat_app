@@ -1,5 +1,4 @@
 # chat app
-Blog post web app to share your post to everyone
 ## Getting Started
 
 ### Prerequisites
