@@ -10,7 +10,7 @@
 * first you must clone the project using git
 
 ```bash
-git clone https://github.com/moyad123/chat_app.git
+git clone https://github.com/moayadalsariya/chat_app.git
 ```
 * Then cd to chat_app
 
